@@ -20,7 +20,7 @@ const Navbars:React.FC<NavBarProps> = () => {
        <SearchInput >
        </SearchInput>
        <AuthModal/>
-       <RightContent/>
+       <RightContent user={undefined}/>
     </Flex>
   )
 }
