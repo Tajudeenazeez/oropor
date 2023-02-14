@@ -22,7 +22,7 @@ const ResetPassword: React.FC = () => {
 
     return (
         <Flex align='center'   direction="column" >
-            <Image src="/images/Millenium.png" height="100px" mt="-20" width="100px" alt="mill"/>
+            <Image src="/images/oropor3.png" height="100px" mt="-20" width="100px" alt="mill"/>
             <Text fontWeight="extrabold" p="5"> Reset your Password</Text>
             {success ? <Text textColor="green.600" fontSize="3xl"> Email Sent! check your inbox </Text> : <Text p="5">Enter the email associated with your email account and 
                 we &apos;ll send you a reset link
