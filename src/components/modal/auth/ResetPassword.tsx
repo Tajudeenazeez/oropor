@@ -8,17 +8,12 @@ const ResetPassword: React.FC = () => {
     const [email, setEmail] = useState('');
     const [success, setSuccess] = useState(false)
     const [sendPasswordResetEmail, sending, error] = useSendPasswordResetEmail(auth);
-  
-    
-      const onSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
+
+    const onSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         await sendPasswordResetEmail(email)
-        setSuccess(true)
-
-        
+        setSuccess(true) 
       }
-   
-
 
     return (
         <Flex align='center'   direction="column" >

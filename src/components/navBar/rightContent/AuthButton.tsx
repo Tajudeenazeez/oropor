@@ -12,13 +12,14 @@ const AuthButton:React.FC = () => {
         <Button 
             variant='outline'
             width={{sm:"-moz-fit-content", md:"150px"}} 
-            display={{base:"none",sm:"flex", md:"flex"}}
+            display={{base:"none",sm:"flex",}}
             mr="2.5"
             fontSize={20}
             onClick={()=>{setAuthModalState({open: true, view: "login"})}}
-        >Login</Button>
+        >Login
+        </Button>
         <Button
-            display={{base:"none",sm:"flex", md:"flex"}}
+            display={{base:"none",sm:"flex",}}
             variant='outline'
             width={{sm:"-moz-fit-content", md:"150px"}} 
             bg="brand.900"
@@ -26,7 +27,8 @@ const AuthButton:React.FC = () => {
             fontSize={20}
             onClick={()=>{setAuthModalState({open: true, view: "signup"})}}
 
-        >Sign up</Button>
+        >Sign up
+        </Button>
     </>
   )
 }

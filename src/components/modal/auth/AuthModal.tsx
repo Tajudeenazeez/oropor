@@ -19,6 +19,7 @@ import { auth } from '@/firebase/ClientApp'
 const AuthModal:React.FC = () => {
     const [modalState, setModalState] = useRecoilState(authModalState)
     const [user] = useAuthState(auth)
+    
     const handleModalState = useCallback(() => {
       setModalState((prev)=>{
         return {
@@ -38,7 +39,6 @@ const AuthModal:React.FC = () => {
 
     return (
       <>
-        {/* <Button onClick={onOpen}>Open Modal</Button> */}
   
         <Modal isOpen={modalState.open} onClose={handleModalState} >
           <ModalOverlay />

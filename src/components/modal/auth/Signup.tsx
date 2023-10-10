@@ -3,8 +3,8 @@ import { Button, Flex, Input, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { useSetRecoilState } from "recoil";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { auth } from "../../../../firebase/ClientApp";
-import { FIREBASE_ERROR } from "../../../../firebase/firebaseError";
+import { auth } from "../../../firebase/ClientApp";
+import { FIREBASE_ERROR } from "../../../firebase/firebaseError";
 
 const initialState = {
   email: "",
@@ -34,10 +34,8 @@ const Signup: React.FC = () => {
         setError("")
     }
     createUserWithEmailAndPassword(signup.email, signup.password);
-
-
-   
   };
+  
   return (
     <>
       <form onSubmit={onSubmit}>

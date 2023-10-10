@@ -5,8 +5,7 @@ import Navbars from "../navBar/Navbars";
 const Layout: React.FC<any> = ({ children }) => {
   return (
     <div>
-      {/* <Flex align='center' justify='center' bg="brand.900">welcome incoming...</Flex> */}
-      <Navbars Children={undefined} />
+      <Navbars />
       <main>{children}</main>
     </div>
   );

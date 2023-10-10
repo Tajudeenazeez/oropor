@@ -5,14 +5,12 @@ import { useAuthState } from 'react-firebase-hooks/auth'
 import AuthButton from './AuthButton'
 import { User } from 'firebase/auth'
 import MenuIcon from './MenuIcon'
-
-
-type PropsUser = {
-  user: User | undefined | null
+import NeutralLogin from '../../modal/auth/NeutralLogin'
+type RightProp = {
+  user?: User | null
 }
 
-const RightContent: React.FC<PropsUser> = () => {
-  const [user, loading, error] = useAuthState(auth);
+const RightContent: React.FC<RightProp> = ({ user }) => {
  
   return (
    <Flex align="center" justify='center' mr='4'>

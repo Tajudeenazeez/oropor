@@ -1,7 +1,7 @@
 import { Button, Flex, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import {useSignInWithGoogle} from "react-firebase-hooks/auth"
-import {auth} from "../../../../firebase/ClientApp"
+import {auth} from "../../../firebase/ClientApp"
 
 const OauthButton:React.FC = () => {
   const [signInWithGoogle, user, loading, error]= useSignInWithGoogle(auth)

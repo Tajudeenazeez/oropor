@@ -2,9 +2,9 @@ import { Menu, MenuButton, Text, Flex, Icon, MenuList, MenuGroup, MenuItem, Butt
 import React from 'react'
 import { BiLogIn } from 'react-icons/bi'
 import { IoMdArrowDropdown } from 'react-icons/io'
-import { MdOutlineAccountBalanceWallet } from 'react-icons/md'
 import { useSetRecoilState } from 'recoil'
 import { authModalState } from '@/atoms/authModalAtom'
+import { VscAccount } from 'react-icons/vsc'
 
 
 const NeutralLogin:React.FC = () => {
@@ -15,7 +15,8 @@ const NeutralLogin:React.FC = () => {
     <Menu >
         <MenuButton>
           <Flex align="center" width="16">
-            <Icon as={MdOutlineAccountBalanceWallet}/>
+            <Icon fontSize="xl" mr='4' as={VscAccount} />
+
             <Icon as={IoMdArrowDropdown} />
           </Flex>
         </MenuButton>
@@ -24,13 +25,12 @@ const NeutralLogin:React.FC = () => {
           <MenuItem>
           <Flex align='center' width="100%">
               <MenuItem>
-                {/* <Icon fontSize="xl" mr='4' as={VscAccount} /> */}
                 <Text fontSize='xl'>Darkmode</Text>
               </MenuItem>
             </Flex>
           </MenuItem>
             <MenuItem>
-              {/* <Button
+               <Button
               width='100%'
                 variant="solid"
                 textColor="brand.50"
@@ -47,7 +47,7 @@ const NeutralLogin:React.FC = () => {
                     <Icon as={BiLogIn} mr='2'  />
                     <Text>Log in/Sign Up</Text>
                 </Flex>
-              </Button> */}
+              </Button> 
             </MenuItem>
           </MenuGroup>
           <MenuDivider />
